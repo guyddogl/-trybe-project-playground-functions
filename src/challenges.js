@@ -83,12 +83,12 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(arrayFizzBuzz) {
   // seu código aqui
   let fizzBuzzResultado = [];
-  for (let index = 0; index < arrayFizzBuzz.length; index += 1) {
-    if ((arrayFizzBuzz[index] % 3) === 0 && (arrayFizzBuzz[index]) % 5 === 0) {
+  for (let indexNumber of arrayFizzBuzz) {
+    if ((indexNumber % 3) === 0 && (indexNumber) % 5 === 0) {
       fizzBuzzResultado.push("fizzBuzz");
-    } else if ((arrayFizzBuzz[index]) % 3 === 0) {
+    } else if ((indexNumber) % 3 === 0) {
       fizzBuzzResultado.push("fizz");
-    } else if ((arrayFizzBuzz[index]) % 5 === 0) {
+    } else if ((indexNumber) % 5 === 0) {
       fizzBuzzResultado.push("buzz");
     } else {
       fizzBuzzResultado.push("bug!");
