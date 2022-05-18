@@ -33,16 +33,21 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(arrayNomes) {
   // seu código aqui
-  let resultado = arrayNomes[arrayNomes.length-1] + ', ' + arrayNomes[0];
+  let resultado = arrayNomes[arrayNomes.length - 1] + ', ' + arrayNomes[0];
   return resultado;
 }
-let arrayNomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
-console.log("Desafio 4: " + concatName(arrayNomes));
+// let arrayNomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+// console.log("Desafio 4: " + concatName(arrayNomes));
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins, ties) {
   // seu código aqui
+  let resultado = ((wins *3 ) + ties);
+  return resultado;
 }
+let wins = 14;
+let ties = 8;
+console.log("Desafio 5: ", footballPoints(wins, ties));
 
 // Desafio 6
 function highestCount() {
