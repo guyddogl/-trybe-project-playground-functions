@@ -1,11 +1,10 @@
 // Desafio 1
 function compareTrue(param1, param2) {
   // seu código aqui
-  if (param1 === true && param2 === true) {
+  if (param1 && param2) {
     return true;
-  } else {
-    return false;
-  }
+  } 
+  return false;
 }
 // let param1 = true;
 // let param2 = true;
