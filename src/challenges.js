@@ -103,30 +103,18 @@ function fizzBuzz(arrayFizzBuzz) {
 function encode(stringEncodeDecode) {
   // seu código aqui
   let aTo1 = stringEncodeDecode.replace(/a/g, 1); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll
-  stringEncodeDecode = aTo1;
-  let eTo2 = stringEncodeDecode.replace(/e/g, 2);
-  stringEncodeDecode = eTo2;
-  let iTo3 = stringEncodeDecode.replace(/i/g, 3);
-  stringEncodeDecode = iTo3;
-  let oTo4 = stringEncodeDecode.replace(/o/g, 4);
-  stringEncodeDecode = oTo4;
-  let uTo5 = stringEncodeDecode.replace(/u/g, 5);
-  stringEncodeDecode = uTo5;
-  return stringEncodeDecode;
+  let eTo2 = aTo1.replace(/e/g, 2);
+  let iTo3 = eTo2.replace(/i/g, 3);
+  let oTo4 = iTo3.replace(/o/g, 4);
+  return oTo4.replace(/u/g, 5);
 }
 function decode(stringEncodeDecode) {
   // seu código aqui
   let oneToA = stringEncodeDecode.replace(/1/g, 'a');
-  stringEncodeDecode = oneToA;
-  let twoToE = stringEncodeDecode.replace(/2/g, 'e');
-  stringEncodeDecode = twoToE;
-  let threeToI = stringEncodeDecode.replace(/3/g, 'i');
-  stringEncodeDecode = threeToI;
-  let fourToO = stringEncodeDecode.replace(/4/g, 'o');
-  stringEncodeDecode = fourToO;
-  let fiveToU = stringEncodeDecode.replace(/5/g, 'u');
-  stringEncodeDecode = fiveToU;
-  return stringEncodeDecode;
+  let twoToE = oneToA.replace(/2/g, 'e');
+  let threeToI = twoToE.replace(/3/g, 'i');
+  let fourToO = threeToI.replace(/4/g, 'o');
+  return fiveToU = fourToO.replace(/5/g, 'u');
 }
 // let stringEncodeDecode = "hi there!";
 // console.log("Desafio 9: Encode: ", encode(stringEncodeDecode), " Decode: ", decode(stringEncodeDecode));
