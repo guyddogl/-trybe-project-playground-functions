@@ -134,6 +134,18 @@ function decode(stringEncodeDecode) {
 // Desafio 10
 function techList(techs, name) {
   // seu código aqui
+  if (techs.length !== 0) {
+    techs.sort(); // https://ricardo-reis.medium.com/o-m%C3%A9todo-sort-do-array-javascript-482576734e0a
+    let arrayTechs = [];
+    for (let indexTechs of techs) {
+      let objTechs = {};
+      objTechs['tech'] = indexTechs;
+      objTechs['name'] = name;
+      arrayTechs.push(objTechs);
+    }
+    return arrayTechs;
+  }
+  return 'Vazio!';
 }
 // let name = "Lucas";
 // let techs = ["React", "Jest", "HTML", "CSS", "JavaScript"];
