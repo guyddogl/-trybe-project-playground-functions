@@ -49,8 +49,8 @@ function highestCount(arrayNumeros) {
   // seu código aqui
   let maiorValor = Math.max(... arrayNumeros); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
   let count = 0;
-  for ( let index = 0; index < arrayNumeros.length; index += 1) {
-    if (arrayNumeros[index] === maiorValor) {
+  for ( let indexNumber of arrayNumeros) {
+    if (indexNumber === maiorValor) {
       count += 1;
     }
   }
@@ -132,9 +132,12 @@ function decode(stringEncodeDecode) {
 // console.log("Desafio 9: Encode: ", encode(stringEncodeDecode), " Decode: ", decode(stringEncodeDecode));
 
 // Desafio 10
-function techList() {
+function techList(techs, name) {
   // seu código aqui
 }
+// let name = "Lucas";
+// let techs = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+// console.log("Desafio 10: ", techList(techs, name));
 
 module.exports = {
   calcArea,
