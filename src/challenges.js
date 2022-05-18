@@ -45,14 +45,24 @@ function footballPoints(wins, ties) {
   let resultado = ((wins *3 ) + ties);
   return resultado;
 }
-let wins = 14;
-let ties = 8;
-console.log("Desafio 5: ", footballPoints(wins, ties));
+// let wins = 14;
+// let ties = 8;
+// console.log("Desafio 5: ", footballPoints(wins, ties));
 
 // Desafio 6
-function highestCount() {
+function highestCount(arrayNumeros) {
   // seu código aqui
+  let maiorValor = Math.max(... arrayNumeros);
+  let count = 0;
+  for ( let i = 0; i < arrayNumeros.length; i += 1) {
+    if (arrayNumeros[i] === maiorValor) {
+      count += 1;
+    }
+  }
+  return count;
 }
+let arrayNumeros = [9, 1, 2, 3, 9, 5, 7];
+console.log("Desafio 6: ", highestCount(arrayNumeros));
 
 // Desafio 7
 function catAndMouse() {
