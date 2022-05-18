@@ -17,7 +17,7 @@ function generatePhoneNumber(arrayNumbers) {
         return 'não é possível gerar um número de telefone com esses valores';
       }
     }
-    return '(' + arrayNumbers[0] + arrayNumbers[1] + ') ' + arrayNumbers[2] + arrayNumbers[3] + arrayNumbers[4] + arrayNumbers[5] + arrayNumbers[6] + '-' + arrayNumbers[7] + arrayNumbers[8] + arrayNumbers[9] + arrayNumbers[10];
+    return `(${arrayNumbers[0]}${arrayNumbers[1]}) ${arrayNumbers[2]}${arrayNumbers[3]}${arrayNumbers[4]}${arrayNumbers[5]}${arrayNumbers[6]}-${arrayNumbers[7]}${arrayNumbers[8]}${arrayNumbers[9]}${arrayNumbers[10]}`;
   }
   return 'Array com tamanho incorreto.';
 }
@@ -49,12 +49,12 @@ function hydrate(string) {
     sumNumbers += numberInt;
   }
   if (sumNumbers === 1) {
-    return sumNumbers + ' copo de água';
+    return `${sumNumbers} copo de água`;
   }
-  return sumNumbers + ' copos de água';
+  return `${sumNumbers} copos de água`;
 }
-let string = '1 cachaça, 5 cervejas e 1 copo de vinho';
-console.log("Desafio 12: ", hydrate(string));
+// let string = '1 cachaça, 5 cervejas e 1 copo de vinho';
+// console.log('Desafio 13: ', hydrate(string));
 
 module.exports = {
   generatePhoneNumber,
