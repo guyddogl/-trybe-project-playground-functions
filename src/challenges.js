@@ -128,8 +128,8 @@ function decode(stringEncodeDecode) {
   stringEncodeDecode = fiveToU;
   return stringEncodeDecode;
 }
-let stringEncodeDecode = "hi there!";
-console.log("Desafio 9: Encode: ", encode(stringEncodeDecode), " Decode: ", decode(stringEncodeDecode));
+// let stringEncodeDecode = "hi there!";
+// console.log("Desafio 9: Encode: ", encode(stringEncodeDecode), " Decode: ", decode(stringEncodeDecode));
 
 // Desafio 10
 function techList() {
