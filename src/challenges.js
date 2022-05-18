@@ -62,10 +62,9 @@ function highestCount(arrayNumeros) {
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
-  let distanciaMouseCat1 = Math.abs(cat1 - mouse);
+  let distanciaMouseCat1 = Math.abs(cat1 - mouse); // https://www.w3big.com/pt/jsref/jsref-abs.html
   let distanciaMouseCat2 = Math.abs(cat2 - mouse);
   let resultado = '';
-
   if (distanciaMouseCat1 < distanciaMouseCat2) {
     resultado = 'cat1';
   } else if (distanciaMouseCat2 < distanciaMouseCat1) {
@@ -73,7 +72,6 @@ function catAndMouse(mouse, cat1, cat2) {
   } else {
     resultado = 'os gatos trombam e o rato foge';
   }
-
   return resultado;
 }
 // let mouse = 1;
@@ -102,12 +100,36 @@ function fizzBuzz(arrayFizzBuzz) {
 // console.log("Desafio 8: ", fizzBuzz(arrayFizzBuzz));
 
 // Desafio 9
-function encode() {
+function encode(stringEncodeDecode) {
   // seu código aqui
+  let aTo1 = stringEncodeDecode.replace(/a/g, 1); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll
+  stringEncodeDecode = aTo1;
+  let eTo2 = stringEncodeDecode.replace(/e/g, 2);
+  stringEncodeDecode = eTo2;
+  let iTo3 = stringEncodeDecode.replace(/i/g, 3);
+  stringEncodeDecode = iTo3;
+  let oTo4 = stringEncodeDecode.replace(/o/g, 4);
+  stringEncodeDecode = oTo4;
+  let uTo5 = stringEncodeDecode.replace(/u/g, 5);
+  stringEncodeDecode = uTo5;
+  return stringEncodeDecode;  
 }
-function decode() {
+function decode(stringEncodeDecode) {
   // seu código aqui
+  let oneToA = stringEncodeDecode.replace(/1/g, "a");
+  stringEncodeDecode = oneToA;
+  let twoToE = stringEncodeDecode.replace(/2/g, "e");
+  stringEncodeDecode = twoToE;
+  let threeToI = stringEncodeDecode.replace(/3/g, "i");
+  stringEncodeDecode = threeToI;
+  let fourToO = stringEncodeDecode.replace(/4/g, "o");
+  stringEncodeDecode = fourToO;
+  let fiveToU = stringEncodeDecode.replace(/5/g, "u");
+  stringEncodeDecode = fiveToU;
+  return stringEncodeDecode;
 }
+let stringEncodeDecode = "hi there!";
+console.log("Desafio 9: Encode: ", encode(stringEncodeDecode), " Decode: ", decode(stringEncodeDecode));
 
 // Desafio 10
 function techList() {
