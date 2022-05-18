@@ -38,7 +38,7 @@ function concatName(arrayNomes) {
 // Desafio 5
 function footballPoints(wins, ties) {
   // seu código aqui
-  return ((wins *3 ) + ties);
+  return ((wins * 3) + ties);
 }
 // let wins = 14;
 // let ties = 8;
@@ -47,7 +47,7 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(arrayNumeros) {
   // seu código aqui
-  let maiorValor = Math.max(... arrayNumeros); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
+  let maiorValor = Math.max(...arrayNumeros); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
   let count = 0;
   for (let indexNumber of arrayNumeros) {
     if (indexNumber === maiorValor) {
@@ -112,7 +112,7 @@ function encode(stringEncodeDecode) {
   stringEncodeDecode = oTo4;
   let uTo5 = stringEncodeDecode.replace(/u/g, 5);
   stringEncodeDecode = uTo5;
-  return stringEncodeDecode;  
+  return stringEncodeDecode;
 }
 function decode(stringEncodeDecode) {
   // seu código aqui
