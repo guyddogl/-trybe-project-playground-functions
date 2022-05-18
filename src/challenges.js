@@ -30,7 +30,7 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(arrayNomes) {
   // seu código aqui
-  return arrayNomes[arrayNomes.length - 1] + ', ' + arrayNomes[0];
+  return `${arrayNomes[arrayNomes.length - 1]}, ${arrayNomes[0]}`;
 }
 // let arrayNomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 // console.log("Desafio 4: " + concatName(arrayNomes));
