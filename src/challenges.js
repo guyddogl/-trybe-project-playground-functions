@@ -22,7 +22,7 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(string) {
   // seu código aqui
-  return string.split(' ');
+  return string.split(' '); // https://www.devmedia.com.br/javascript-split-dividindo-separando-strings/39254
 }
 // let string = "go Trybe";
 // console.log("Desafio 3: ", splitSentence(string));
@@ -30,8 +30,7 @@ function splitSentence(string) {
 // Desafio 4
 function concatName(arrayNomes) {
   // seu código aqui
-  let resultado = arrayNomes[arrayNomes.length - 1] + ', ' + arrayNomes[0];
-  return resultado;
+  return arrayNomes[arrayNomes.length - 1] + ', ' + arrayNomes[0];
 }
 // let arrayNomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
 // console.log("Desafio 4: " + concatName(arrayNomes));
