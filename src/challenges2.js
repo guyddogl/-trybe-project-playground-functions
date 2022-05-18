@@ -25,9 +25,19 @@ function generatePhoneNumber(arrayNumbers) {
 // console.log("Desafio 11: ", generatePhoneNumber(arrayNumbers));
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(linaA, lineB, lineC) {
   // seu código aqui
+  let sumlineAlineB = linaA + lineB;
+  let sumLineAlineC = linaA + lineC;
+  let sumLineBlineC = lineB + lineC;
+
+  if (linaA > sumLineBlineC || lineB > sumLineAlineC || lineC > sumlineAlineB) {
+    return false;
+  }
+  return true;
 }
+// let lineA = 10, lineB = 14, lineC = 8;
+// console.log("Desafio 12: ", triangleCheck(lineA, lineB, lineC));
 
 // Desafio 13
 function hydrate() {
