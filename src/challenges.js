@@ -27,13 +27,17 @@ function splitSentence(string) {
   let resultado = string.split(" ");
   return resultado;
 }
-let string = "go Trybe";
-console.log("Desafio 3: ", splitSentence(string));
+// let string = "go Trybe";
+// console.log("Desafio 3: ", splitSentence(string));
 
 // Desafio 4
-function concatName() {
+function concatName(arrayNomes) {
   // seu código aqui
+  let resultado = arrayNomes[arrayNomes.length-1] + ', ' + arrayNomes[0];
+  return resultado;
 }
+let arrayNomes = ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo'];
+console.log("Desafio 4: " + concatName(arrayNomes));
 
 // Desafio 5
 function footballPoints() {
