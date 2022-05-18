@@ -30,7 +30,6 @@ function triangleCheck(linaA, lineB, lineC) {
   let sumlineAlineB = linaA + lineB;
   let sumLineAlineC = linaA + lineC;
   let sumLineBlineC = lineB + lineC;
-
   if (linaA > sumLineBlineC || lineB > sumLineAlineC || lineC > sumlineAlineB) {
     return false;
   }
@@ -40,9 +39,22 @@ function triangleCheck(linaA, lineB, lineC) {
 // console.log("Desafio 12: ", triangleCheck(lineA, lineB, lineC));
 
 // Desafio 13
-function hydrate() {
+function hydrate(string) {
   // seu código aqui
+  let reg = /\d+/g; // https://www.youtube.com/watch?v=pfkkdzeyx6U
+  let arrayNumbers = string.match(reg);
+  let sumNumbers = 0;
+  for (let number of arrayNumbers) {
+    let numberInt = parseInt(number);
+    sumNumbers += numberInt;
+  }
+  if (sumNumbers === 1) {
+    return sumNumbers + ' copo de água';
+  }
+  return sumNumbers + ' copos de água';
 }
+let string = '1 cachaça, 5 cervejas e 1 copo de vinho';
+console.log("Desafio 12: ", hydrate(string));
 
 module.exports = {
   generatePhoneNumber,
