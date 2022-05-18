@@ -3,7 +3,7 @@ function compareTrue(param1, param2) {
   // seu código aqui
   if (param1 && param2) {
     return true;
-  } 
+  }
   return false;
 }
 // let param1 = true;
@@ -49,7 +49,7 @@ function highestCount(arrayNumeros) {
   // seu código aqui
   let maiorValor = Math.max(... arrayNumeros); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
   let count = 0;
-  for ( let indexNumber of arrayNumeros) {
+  for (let indexNumber of arrayNumeros) {
     if (indexNumber === maiorValor) {
       count += 1;
     }
@@ -85,13 +85,13 @@ function fizzBuzz(arrayFizzBuzz) {
   let fizzBuzzResultado = [];
   for (let indexNumber of arrayFizzBuzz) {
     if ((indexNumber % 3) === 0 && (indexNumber) % 5 === 0) {
-      fizzBuzzResultado.push("fizzBuzz");
+      fizzBuzzResultado.push('fizzBuzz');
     } else if ((indexNumber) % 3 === 0) {
-      fizzBuzzResultado.push("fizz");
+      fizzBuzzResultado.push('fizz');
     } else if ((indexNumber) % 5 === 0) {
-      fizzBuzzResultado.push("buzz");
+      fizzBuzzResultado.push('buzz');
     } else {
-      fizzBuzzResultado.push("bug!");
+      fizzBuzzResultado.push('bug!');
     }
   }
   return fizzBuzzResultado;
@@ -116,15 +116,15 @@ function encode(stringEncodeDecode) {
 }
 function decode(stringEncodeDecode) {
   // seu código aqui
-  let oneToA = stringEncodeDecode.replace(/1/g, "a");
+  let oneToA = stringEncodeDecode.replace(/1/g, 'a');
   stringEncodeDecode = oneToA;
-  let twoToE = stringEncodeDecode.replace(/2/g, "e");
+  let twoToE = stringEncodeDecode.replace(/2/g, 'e');
   stringEncodeDecode = twoToE;
-  let threeToI = stringEncodeDecode.replace(/3/g, "i");
+  let threeToI = stringEncodeDecode.replace(/3/g, 'i');
   stringEncodeDecode = threeToI;
-  let fourToO = stringEncodeDecode.replace(/4/g, "o");
+  let fourToO = stringEncodeDecode.replace(/4/g, 'o');
   stringEncodeDecode = fourToO;
-  let fiveToU = stringEncodeDecode.replace(/5/g, "u");
+  let fiveToU = stringEncodeDecode.replace(/5/g, 'u');
   stringEncodeDecode = fiveToU;
   return stringEncodeDecode;
 }
@@ -139,8 +139,8 @@ function techList(techs, name) {
     let arrayTechs = [];
     for (let indexTechs of techs) {
       let objTechs = {};
-      objTechs['tech'] = indexTechs;
-      objTechs['name'] = name;
+      objTechs.tech = indexTechs;
+      objTechs.name = name;
       arrayTechs.push(objTechs);
     }
     return arrayTechs;
