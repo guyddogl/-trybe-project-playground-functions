@@ -47,7 +47,6 @@ function highestCount(arrayNumeros) {
   let maiorValor = Math.max(...arrayNumeros); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
   let count = 0;
   for (let indexNumber of arrayNumeros) {
-    // indexNumber === maiorValor ? count += 1 : '';
     if (indexNumber === maiorValor) count += 1;
   }
   return count;
@@ -80,15 +79,10 @@ function fizzBuzz(arrayFizzBuzz) {
   // seu código aqui
   let fizzBuzzResultado = [];
   for (let indexNumber of arrayFizzBuzz) {
-    if ((indexNumber % 3) === 0 && (indexNumber) % 5 === 0) {
-      fizzBuzzResultado.push('fizzBuzz');
-    } else if ((indexNumber) % 3 === 0) {
-      fizzBuzzResultado.push('fizz');
-    } else if ((indexNumber) % 5 === 0) {
-      fizzBuzzResultado.push('buzz');
-    } else {
-      fizzBuzzResultado.push('bug!');
-    }
+    if ((indexNumber % 3) === 0 && (indexNumber) % 5 === 0) fizzBuzzResultado.push('fizzBuzz');
+    else if ((indexNumber) % 3 === 0) fizzBuzzResultado.push('fizz');
+    else if ((indexNumber) % 5 === 0) fizzBuzzResultado.push('buzz');
+    else fizzBuzzResultado.push('bug!');
   }
   return fizzBuzzResultado;
 }
