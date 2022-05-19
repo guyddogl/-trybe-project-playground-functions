@@ -1,10 +1,7 @@
 // Desafio 1
 function compareTrue(param1, param2) {
   // seu código aqui
-  if (param1 && param2) {
-    return true;
-  }
-  return false;
+  return param1 && param2;
 }
 // let param1 = true;
 // let param2 = true;
@@ -50,9 +47,8 @@ function highestCount(arrayNumeros) {
   let maiorValor = Math.max(...arrayNumeros); // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/max
   let count = 0;
   for (let indexNumber of arrayNumeros) {
-    if (indexNumber === maiorValor) {
-      count += 1;
-    }
+    // indexNumber === maiorValor ? count += 1 : '';
+    if (indexNumber === maiorValor) count += 1;
   }
   return count;
 }
@@ -114,7 +110,7 @@ function decode(stringEncodeDecode) {
   let twoToE = oneToA.replace(/2/g, 'e');
   let threeToI = twoToE.replace(/3/g, 'i');
   let fourToO = threeToI.replace(/4/g, 'o');
-  return fiveToU = fourToO.replace(/5/g, 'u');
+  return fourToO.replace(/5/g, 'u');
 }
 // let stringEncodeDecode = "hi there!";
 // console.log("Desafio 9: Encode: ", encode(stringEncodeDecode), " Decode: ", decode(stringEncodeDecode));
@@ -126,9 +122,10 @@ function techList(techs, name) {
     techs.sort(); // https://ricardo-reis.medium.com/o-m%C3%A9todo-sort-do-array-javascript-482576734e0a
     let arrayTechs = [];
     for (let indexTechs of techs) {
-      let objTechs = {};
-      objTechs.tech = indexTechs;
-      objTechs.name = name;
+      let objTechs = {
+        tech: indexTechs,
+        name, // Mentoria. Se propriedade e valor forem iguais não precisa repetir o nome (name: name)
+      };
       arrayTechs.push(objTechs);
     }
     return arrayTechs;

@@ -6,13 +6,9 @@ function generatePhoneNumber(arrayNumbers) {
       if (value >= 0 && value <= 9) {
         let count = 0;
         for (let countNumber of arrayNumbers) {
-          if (value === countNumber) {
-            count += 1;
-          }
+          if (value === countNumber) count += 1;
         }
-        if (count >= 3) {
-          return 'não é possível gerar um número de telefone com esses valores';
-        }
+        if (count >= 3) return 'não é possível gerar um número de telefone com esses valores';
       } else {
         return 'não é possível gerar um número de telefone com esses valores';
       }
@@ -30,9 +26,7 @@ function triangleCheck(linaA, lineB, lineC) {
   let sumlineAlineB = linaA + lineB;
   let sumLineAlineC = linaA + lineC;
   let sumLineBlineC = lineB + lineC;
-  if (linaA > sumLineBlineC || lineB > sumLineAlineC || lineC > sumlineAlineB) {
-    return false;
-  }
+  if (linaA > sumLineBlineC || lineB > sumLineAlineC || lineC > sumlineAlineB) return false;
   return true;
 }
 // let lineA = 10, lineB = 14, lineC = 8;
@@ -45,13 +39,10 @@ function hydrate(string) {
   let arrayNumbers = string.match(reg);
   let sumNumbers = 0;
   for (let number of arrayNumbers) {
-    let numberInt = parseInt(number);
+    let numberInt = parseInt(number, 10);
     sumNumbers += numberInt;
   }
-  if (sumNumbers === 1) {
-    return `${sumNumbers} copo de água`;
-  }
-  return `${sumNumbers} copos de água`;
+  return sumNumbers === 1 ? `${sumNumbers} copo de água` : `${sumNumbers} copos de água`;
 }
 // let string = '1 cachaça, 5 cervejas e 1 copo de vinho';
 // console.log('Desafio 13: ', hydrate(string));
