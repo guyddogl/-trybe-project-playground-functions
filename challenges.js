@@ -37,13 +37,17 @@ const catAndMouse = (mouse, cat1, cat2) => {
 };
 
 // Desafio 8
+const numbersModule = (indexNumber, fizzBuzzResultado) => {
+  if ((indexNumber % 3) === 0 && (indexNumber) % 5 === 0) fizzBuzzResultado.push('fizzBuzz');
+  else if ((indexNumber) % 3 === 0) fizzBuzzResultado.push('fizz');
+  else if ((indexNumber) % 5 === 0) fizzBuzzResultado.push('buzz');
+  else fizzBuzzResultado.push('bug!');
+};
+
 const fizzBuzz = (arrayFizzBuzz) => {
   let fizzBuzzResultado = [];
   for (let indexNumber of arrayFizzBuzz) {
-    if ((indexNumber % 3) === 0 && (indexNumber) % 5 === 0) fizzBuzzResultado.push('fizzBuzz');
-    else if ((indexNumber) % 3 === 0) fizzBuzzResultado.push('fizz');
-    else if ((indexNumber) % 5 === 0) fizzBuzzResultado.push('buzz');
-    else fizzBuzzResultado.push('bug!');
+    numbersModule(indexNumber, fizzBuzzResultado);
   }
   return fizzBuzzResultado;
 };
@@ -80,18 +84,4 @@ const techList = (techs, name) => {
     return arrayTechs;
   }
   return 'Vazio!';
-};
-
-module.exports = {
-  calcArea,
-  catAndMouse,
-  compareTrue,
-  concatName,
-  decode,
-  encode,
-  fizzBuzz,
-  footballPoints,
-  highestCount,
-  splitSentence,
-  techList,
 };
