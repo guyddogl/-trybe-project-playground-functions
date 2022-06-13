@@ -33,6 +33,9 @@ describe('Desafio 3: Crie uma função que divida uma frase', () => {
     expect(['Dragon', 'Ball', 'Z']).toEqual(splitSentence('Dragon Ball Z'));
   });
   test('Retorna [#vqv, Vamo, Que, Vamo] quando receber "#vqv Vamo Que Vamo"', () => {
-    expect(['#vqv', 'Vamo', 'Que', 'Vamo']).toEqual(splitSentence('#vqv Vamo Que Vamo'));
+    expect(['Vamo', 'Que', 'Vamo']).toEqual(splitSentence('Vamo Que Vamo'));
+  });
+  test('Retorna [#vqv] quando receber "#vqv"', () => {
+    expect(['#vqv']).toEqual(splitSentence('#vqv'));
   });
 });
