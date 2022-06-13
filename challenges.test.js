@@ -13,3 +13,16 @@ describe('Desafio 1: Crie uma função usando o operador &&', () => {
     expect(true).toBe(compareTrue(true, true));
   });
 });
+
+// Testes compareTrue
+describe('Desafio 2: Crie uma função que calcule a área de um triangulo', () => {
+  test('Retorna 60 quando executar a função calcArea com os parâmetros base = 10 e height = 12', () => {
+    expect(60).toBe(calcArea(10, 12));
+  });
+  test('Retorna 154 quando executar a função calcArea com os parâmetros base = 11 e height = 28', () => {
+    expect(154).toBe(calcArea(11, 28));
+  });
+  test('Retorna 24.5 quando executar a função calcArea com os parâmetros base = 7 e height = 7', () => {
+    expect(24.5).toBe(calcArea(7, 7));
+  });
+});
