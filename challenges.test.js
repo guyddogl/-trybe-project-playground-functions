@@ -14,7 +14,7 @@ describe('Desafio 1: Crie uma função usando o operador &&', () => {
   });
 });
 
-// Testes compareTrue
+// Testes calcArea
 describe('Desafio 2: Crie uma função que calcule a área de um triangulo', () => {
   test('Retorna 60 quando executar a função calcArea com os parâmetros base = 10 e height = 12', () => {
     expect(60).toBe(calcArea(10, 12));
@@ -24,5 +24,15 @@ describe('Desafio 2: Crie uma função que calcule a área de um triangulo', () 
   });
   test('Retorna 24.5 quando executar a função calcArea com os parâmetros base = 7 e height = 7', () => {
     expect(24.5).toBe(calcArea(7, 7));
+  });
+});
+
+// Testes splitSentence
+describe('Desafio 3: Crie uma função que divida uma frase', () => {
+  test('Retorna [Dragon, Ball, Z] quando receber "Dragon Ball Z"', () => {
+    expect(['Dragon', 'Ball', 'Z']).toEqual(splitSentence('Dragon Ball Z'));
+  });
+  test('Retorna [#vqv, Vamo, Que, Vamo] quando receber "#vqv Vamo Que Vamo"', () => {
+    expect(['#vqv', 'Vamo', 'Que', 'Vamo']).toEqual(splitSentence('#vqv Vamo Que Vamo'));
   });
 });
