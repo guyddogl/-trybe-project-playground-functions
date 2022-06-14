@@ -39,3 +39,16 @@ describe('Desafio 3: Crie uma função que divide uma frase', () => {
     expect(['#vqv']).toEqual(splitSentence('#vqv'));
   });
 });
+
+// Testes concatName
+describe('Desafio 4: Crie uma função que retorne a primeira e a última string de um array', () => {
+  test('Retorna \'Campeão, Flamengo\' ao receber [\'Flamengo\', \'Octa\', \'Campeão\']', () => {
+    expect('Campeão, Flamengo').toBe(concatName(['Flamengo', 'Octa', 'Campeão']));
+  });
+  test('Retorna \'Campeão, Flamengo\' ao receber [\'Pague\', \'a\', \'série\', \'B\']', () => {
+    expect('B, Pague').toBe(concatName(['Pague', 'a', 'série', 'B']));
+  });
+  test('Retorna \'Novo, Vice\' ao receber [\'Vice\', \'de\', \'Novo\'', () => {
+    expect('Novo, Vice').toBe(concatName(['Vice', 'de', 'Novo']));
+  });
+});
