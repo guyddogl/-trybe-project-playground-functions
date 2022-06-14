@@ -1,4 +1,4 @@
-const { compareTrue, calcArea, splitSentence } = require('./challenges');
+const { compareTrue, calcArea, splitSentence, concatName } = require('./challenges');
 
 // Testes compareTrue
 describe('Desafio 1: Crie uma função usando o operador &&', () => {
@@ -28,14 +28,14 @@ describe('Desafio 2: Crie uma função que calcule a área de um triangulo', () 
 });
 
 // Testes splitSentence
-describe('Desafio 3: Crie uma função que divida uma frase', () => {
-  test('Retorna [Dragon, Ball, Z] quando receber "Dragon Ball Z"', () => {
+describe('Desafio 3: Crie uma função que divide uma frase', () => {
+  test('Retorna [Dragon, Ball, Z] quando receber \'Dragon Ball Z\'', () => {
     expect(['Dragon', 'Ball', 'Z']).toEqual(splitSentence('Dragon Ball Z'));
   });
-  test('Retorna [#vqv, Vamo, Que, Vamo] quando receber "#vqv Vamo Que Vamo"', () => {
+  test('Retorna [#vqv, Vamo, Que, Vamo] quando receber \'#vqv Vamo Que Vamo\'', () => {
     expect(['Vamo', 'Que', 'Vamo']).toEqual(splitSentence('Vamo Que Vamo'));
   });
-  test('Retorna [#vqv] quando receber "#vqv"', () => {
+  test('Retorna [#vqv] quando receber \'#vqv\'', () => {
     expect(['#vqv']).toEqual(splitSentence('#vqv'));
   });
 });
