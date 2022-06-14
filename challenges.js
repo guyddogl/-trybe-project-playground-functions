@@ -85,3 +85,10 @@ const techList = (techs, name) => {
   }
   return 'Vazio!';
 };
+
+module.exports = {
+  compareTrue,
+  calcArea,
+  splitSentence,
+  concatName,
+};
