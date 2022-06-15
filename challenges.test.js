@@ -1,4 +1,4 @@
-const { compareTrue, calcArea, splitSentence, concatName } = require('./challenges');
+const { compareTrue, calcArea, splitSentence, concatName, footballPoints } = require('./challenges');
 
 // Testes compareTrue
 describe('Desafio 1: Crie uma função usando o operador &&', () => {
@@ -50,5 +50,12 @@ describe('Desafio 4: Crie uma função que retorne a primeira e a última string
   });
   test('Retorna \'Novo, Vice\' ao receber [\'Vice\', \'de\', \'Novo\'', () => {
     expect('Novo, Vice').toBe(concatName(['Vice', 'de', 'Novo']));
+  });
+});
+
+// Testes footballPoints
+describe('Desafio 5: Crie uma função que calcule a pontuação de um campeonato de futebol', () => {
+  test('Retorna 30 pontos quando o time tiver 8 vitórias e 6 empates', () => {
+    expect(footballPoints(8, 6)).toBe(30);
   });
 });
