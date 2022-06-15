@@ -58,4 +58,10 @@ describe('Desafio 5: Crie uma função que calcule a pontuação de um campeonat
   test('Retorna 30 pontos quando o time tiver 8 vitórias e 6 empates', () => {
     expect(footballPoints(8, 6)).toBe(30);
   });
+  test('Retorna 0 pontos quando o time tiver 0 vitórias e 0 empates', () => {
+    expect(footballPoints(0, 0)).toBe(0);
+  });
+  test('Retorna 8 pontos quando o time tiver 2 vitórias e 2 empates', () => {
+    expect(footballPoints(2, 2)).toBe(8);
+  });
 });
