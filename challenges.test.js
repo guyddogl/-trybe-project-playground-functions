@@ -68,5 +68,13 @@ describe('Desafio 5: Crie uma função que calcule a pontuação de um campeonat
 
 // Testes highestCount
 describe('Desafio 6: Crie uma função que retorne a quantidade de vezes que o maior número de um array se repete', () => {
-
+  test('Retorna 3 quando o parâmetro for [1, 2, 3, 7, 5, 7, 1, 2, 7]', () => {
+    expect(highestCount([1, 2, 3, 7, 5, 7, 1, 2, 7])).toBe(3);
+  });
+  test('Retorna 1 quando o parâmetro for [1, 2, 3]', () => {
+    expect(highestCount([1, 2, 3])).toBe(1);
+  });
+  test('Retorna 2 quando o parâmetro for [0, 0]', () => {
+    expect(highestCount([0, 0])).toBe(2);
+  });
 });
