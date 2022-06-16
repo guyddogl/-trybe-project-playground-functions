@@ -1,4 +1,4 @@
-const { compareTrue, calcArea, splitSentence, concatName, footballPoints } = require('./challenges');
+const { compareTrue, calcArea, splitSentence, concatName, footballPoints, highestCount } = require('./challenges');
 
 // Testes compareTrue
 describe('Desafio 1: Crie uma função usando o operador &&', () => {
@@ -64,4 +64,9 @@ describe('Desafio 5: Crie uma função que calcule a pontuação de um campeonat
   test('Retorna 8 pontos quando o time tiver 2 vitórias e 2 empates', () => {
     expect(footballPoints(2, 2)).toBe(8);
   });
+});
+
+// Testes highestCount
+describe('Desafio 6: Crie uma função que retorne a quantidade de vezes que o maior número de um array se repete', () => {
+
 });
