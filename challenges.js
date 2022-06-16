@@ -92,4 +92,5 @@ module.exports = {
   splitSentence,
   concatName,
   footballPoints,
+  highestCount,
 };
