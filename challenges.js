@@ -93,4 +93,5 @@ module.exports = {
   concatName,
   footballPoints,
   highestCount,
+  catAndMouse,
 };
