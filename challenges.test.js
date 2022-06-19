@@ -1,4 +1,4 @@
-const { compareTrue, calcArea, splitSentence, concatName, footballPoints, highestCount } = require('./challenges');
+const { compareTrue, calcArea, splitSentence, concatName, footballPoints, highestCount, catAndMouse } = require('./challenges');
 
 // Testes compareTrue
 describe('Desafio 1: Crie uma função usando o operador &&', () => {
@@ -77,4 +77,9 @@ describe('Desafio 6: Crie uma função que retorne a quantidade de vezes que o m
   test('Retorna 2 quando o parâmetro for [0, 0]', () => {
     expect(highestCount([0, 0])).toBe(2);
   });
+});
+
+// Testes catAndMouse
+describe('Desafio 7: ', () => {
+
 });
