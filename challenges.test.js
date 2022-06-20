@@ -84,4 +84,10 @@ describe('Desafio 7: Crie uma função que verifica qual gato está mais perto d
   test('Retorna cat1 quando os parâmetros forem 0, 1 e 5', () => {
     expect(catAndMouse(0, 1, 5)).toBe('cat1');
   });
+  test('Retorna cat2 quando os parâmetros forem 4, 2 e 5', () => {
+    expect(catAndMouse(4, 2, 5)).toBe('cat2');
+  });
+  test('Retorna \'os gatos trombam e o rato foge\' quando os parâmetros forem 2, 3 e 3', () => {
+    expect(catAndMouse(2, 3, 3)).toBe('os gatos trombam e o rato foge');
+  });
 });
