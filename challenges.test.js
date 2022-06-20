@@ -81,7 +81,7 @@ describe('Desafio 6: Crie uma função que retorne a quantidade de vezes que o m
 
 // Testes catAndMouse
 describe('Desafio 7: Crie uma função que verifica qual gato está mais perto do rato', () => {
-  test('Retorna', () => {
-    expect(catAndMouse()).toBe();
+  test('Retorna cat1 quando os parâmetros forem 0, 1 e 5', () => {
+    expect(catAndMouse(0, 1, 5)).toBe('cat1');
   });
 });
