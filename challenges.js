@@ -94,4 +94,5 @@ module.exports = {
   footballPoints,
   highestCount,
   catAndMouse,
+  numbersModule,
 };
