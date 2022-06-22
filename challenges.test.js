@@ -1,4 +1,4 @@
-const { compareTrue, calcArea, splitSentence, concatName, footballPoints, highestCount, catAndMouse } = require('./challenges');
+const { compareTrue, calcArea, splitSentence, concatName, footballPoints, highestCount, catAndMouse, numbersModule, fizzBuzz } = require('./challenges');
 
 // Testes compareTrue
 describe('Desafio 1: Crie uma função usando o operador &&', () => {
@@ -90,4 +90,9 @@ describe('Desafio 7: Crie uma função que verifica qual gato está mais perto d
   test('Retorna \'os gatos trombam e o rato foge\' quando os parâmetros forem 2, 3 e 3', () => {
     expect(catAndMouse(2, 3, 3)).toBe('os gatos trombam e o rato foge');
   });
+});
+
+// Testes fizzBuzz e numbersModule
+describe('Desafio 8: Crie uma função que recebe um array de números e retorna um array de string de acordo com o resultado', () => {
+
 });
