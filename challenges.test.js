@@ -94,5 +94,7 @@ describe('Desafio 7: Crie uma função que verifica qual gato está mais perto d
 
 // Testes fizzBuzz e numbersModule
 describe('Desafio 8: Crie uma função que recebe um array de números e retorna um array de string de acordo com o resultado', () => {
-
+  test('Retorna as strings [\'bug!\', \'fizzBuzz\', \'bug!\', \'fizz\', \'fizzBuzz\'] quando é passado os parâmetros [2, 15, 7, 9, 45] para função fizzBuzz', () => {
+    expect(fizzBuzz([2, 15, 7, 9, 45])).toEqual(['bug!', 'fizzBuzz', 'bug!', 'fizz', 'fizzBuzz']);
+  });
 });
