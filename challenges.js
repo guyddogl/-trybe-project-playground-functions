@@ -95,4 +95,5 @@ module.exports = {
   highestCount,
   catAndMouse,
   numbersModule,
+  fizzBuzz,
 };
