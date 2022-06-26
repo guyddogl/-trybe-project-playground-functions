@@ -96,4 +96,5 @@ module.exports = {
   catAndMouse,
   numbersModule,
   fizzBuzz,
+  encode,
 };
