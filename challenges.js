@@ -97,4 +97,5 @@ module.exports = {
   numbersModule,
   fizzBuzz,
   encode,
+  decode,
 };
