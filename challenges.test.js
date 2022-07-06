@@ -1,4 +1,4 @@
-const { compareTrue, calcArea, splitSentence, concatName, footballPoints, highestCount, catAndMouse, fizzBuzz, encode, decode } = require('./challenges');
+const { compareTrue, calcArea, splitSentence, concatName, footballPoints, highestCount, catAndMouse, fizzBuzz, encode, decode, techList } = require('./challenges');
 
 // Testes compareTrue
 describe('Desafio 1: Crie uma função usando o operador &&', () => {
