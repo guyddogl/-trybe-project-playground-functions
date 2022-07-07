@@ -98,4 +98,5 @@ module.exports = {
   fizzBuzz,
   encode,
   decode,
+  techList,
 };
