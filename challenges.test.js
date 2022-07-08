@@ -120,3 +120,31 @@ describe('Desafio 9: Implemente uma função que codifica e decodifica uma frase
     expect(decode('g4 Tryb2!')).toBe('go Trybe!');
   });
 });
+
+// Testes techList
+describe('10 - Crie uma função de Lista de tecnologias', () => {
+  test('Retorne uma lista de objetos ordenados quando é passada uma lista com 5 tecnologias deve', () => {
+    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas',
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas',
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas',
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas',
+      },
+      {
+        tech: 'React',
+        name: 'Lucas',
+      },
+    ]);
+  });
+});
